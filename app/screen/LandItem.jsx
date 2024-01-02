@@ -28,7 +28,7 @@ const LandItem = () => {
        </View>
 
        <View style={{ position:'absolute', top:'52%',left:'13%',alignItem:'center',}}>
-       <Text style={{ width:wp(80), textAlign: 'center',fontSize:16, color:'white'}}>Afri-tone is a great way to learn the africa languages and culture, whether you’re going on vacation,taking a businesstrip, or just looking to improve your language skills
+       <Text style={{ width:wp(80), textAlign: 'center',fontSize:12, color:'white'}}>Afri-tone is a great way to learn the africa languages and culture, whether you’re going on vacation,taking a businesstrip, or just looking to improve your language skills
         .</Text>
        </View>
 
