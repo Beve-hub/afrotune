@@ -11,6 +11,7 @@ import { Entypo } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 
 
+
 const Home = () => {
   const router = useRouter();
   const drawer = useRef(null);
@@ -73,7 +74,7 @@ const Home = () => {
         columnWrapperStyle={{
           marginVertical: 5
         }}
-        renderItem={({item,index})=> <BodyPartCard index={index} item={item}/>}
+        renderItem={({item,index})=> <BodyPartCard router={router} index={index} item={item}/>}
       />
     </DrawerLayoutAndroid>
     
@@ -83,10 +84,10 @@ const Home = () => {
 export default Home
 
 
-const BodyPartCard = ({item,index}) => {
+const BodyPartCard = ({item,index,router}) => {
   return (
     <View style={{}}>
-      <TouchableOpacity style={{width:wp(40), height:hp(25),gap:10, padding:20,marginHorizontal:15,marginVertical:10,backgroundColor:'white',borderRadius:20, }} >
+      <TouchableOpacity onPress={() => router.push({pathname: '../pages/lang/Learn', parms:item})} style={{width:wp(40), height:hp(25),gap:10, padding:20,marginHorizontal:15,marginVertical:10,backgroundColor:'white',borderRadius:20, }} >
         <Text>{item.name}</Text>
         <Image source={item.Flag} 
           style={{width:wp(30), height:hp(10),justifyContent:'center',alignItems:'center',marginTop:15,}}
