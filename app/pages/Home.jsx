@@ -87,7 +87,7 @@ export default Home
 const BodyPartCard = ({item,index,router}) => {
   return (
     <View style={{}}>
-      <TouchableOpacity onPress={() => router.push({pathname: '../pages/lang/Learn', parms:item})} style={{width:wp(40), height:hp(25),gap:10, padding:20,marginHorizontal:15,marginVertical:10,backgroundColor:'white',borderRadius:20, }} >
+      <TouchableOpacity onPress={() => router.push({pathname: '../pages/lang/Learn', params: item})} style={{width:wp(40), height:hp(25),gap:10, padding:20,marginHorizontal:15,marginVertical:10,backgroundColor:'white',borderRadius:20, }} >
         <Text>{item.name}</Text>
         <Image source={item.Flag} 
           style={{width:wp(30), height:hp(10),justifyContent:'center',alignItems:'center',marginTop:15,}}
